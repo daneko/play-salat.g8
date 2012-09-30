@@ -1,7 +1,7 @@
 package models
 
 import play.api.Play.current
-import java.util.{Date}
+import java.util.{ Date }
 import com.novus.salat._
 import com.novus.salat.dao._
 import com.mongodb.casbah.Imports._
@@ -12,8 +12,7 @@ case class User(
   id: ObjectId = new ObjectId,
   username: String,
   password: String,
-  added: Date = new Date()
-)
+  added: Date = new Date())
 
 object User extends ModelCompanion[User, ObjectId] {
   val collection = mongoCollection("users")
