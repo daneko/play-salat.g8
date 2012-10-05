@@ -1,0 +1,14 @@
+syntax: regexp
+^.idea/
+^.idea_modules/
+^out/
+^logs/
+^target/
+^\.target/
+.*/target/
+.*\.class$
+^\.classpath$
+^\.cache$
+^\.project$
+^\.worksheet/
+^\.settings/
