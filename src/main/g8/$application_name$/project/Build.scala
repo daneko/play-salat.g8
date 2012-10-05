@@ -4,11 +4,11 @@ import PlayProject._
 
 object ApplicationBuild extends Build {
 
-    val appName         = "todolist"
+    val appName         = "$application_name$"
     val appVersion      = "1.0"
 
     val appDependencies = Seq(
-      "se.radley" %% "play-plugins-salat" % "1.0.9"
+      "se.radley" %% "play-plugins-salat" % "$salat_plugin_version$"
     )
 
     val main = PlayProject(appName, appVersion, appDependencies, mainLang = SCALA).settings(
